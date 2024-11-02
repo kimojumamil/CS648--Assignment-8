@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <script src="js/employee-management.js"></script>
+<h1>Employee Management System</h1>
+<p id="employeeCount">Showing 0 Employees</p>
+
+<div>
+    <label>
+        Name:
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+    </label>
+    <label>
+        Title:
+        <input type="text" id="title">
+        <span class="error" id="titleError"></span>
+    </label>
+    <label>
+        Extension:
+        <input type="text" id="extension">
+        <span class="error" id="extensionError"></span>
+    </label>
+    <button id="addEmployeeButton">Add Employee</button>
+</div>
+
+<table id="employeeTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Extension</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Employee rows will be dynamically generated here -->
+    </tbody>
+</table>
+</body>
+</html>
